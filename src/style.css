@@ -1,0 +1,139 @@
+html {
+    --color-primary: #f5f5f5;
+    --color-accent: #ade5ff;
+    --font-color: #080808;
+    --one: #ade5ff;
+    --two: #ade5ff;
+    --four: #ade5ff;
+}
+
+.theme-light {
+    --color-primary: #f5f5f5!important;
+    --color-accent: #ade5ff!important;
+    --font-color: #080808!important;
+    --one: #ade5ff!important;
+    --two: #ade5ff!important;
+    --four: #ade5ff!important;
+}
+
+.theme-dark {
+    --color-primary: #181A1B;
+    --color-accent: #445469;
+    --font-color: #ffffff;
+    --one: #445469;
+    --two: #445469;
+    --four: #445469;
+}
+.text-center {
+    color: var(--font-color);
+}
+body{
+    background-color: var(--color-primary) !important;
+    overflow-x: visible !important;
+}
+.container {
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+  }
+  header img{
+    height: 80%;
+    width: auto;
+  }
+h1{
+    color: var(--font-color);
+}
+.button{
+    background-color: var(--color-accent) !important;
+    border: none !important;
+    outline: none !important;
+    justify-self: flex-end!important;
+    color: var(--font-color) !important;
+    margin-left: auto
+}
+
+.backlog{
+    background-color: var(--one) !important;
+    border: none !important;
+}
+.inprog{
+    background-color: var(--two) !important;
+    border: none !important;
+}
+.done{
+    background-color: var(--four) !important;
+    border: none !important;
+}
+.left{
+    justify-self: flex-start !important;
+}
+.right{
+    justify-self: flex-end !important;
+}
+footer{
+    color: var(--font-color);
+    position: sticky;
+    bottom: 0;
+    margin-top:90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+#app{
+    margin-bottom: 100px !important;
+}
+.row-sdf {
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: var(--font-secondary)!important;
+    color: var(--font-color)!important;
+}
+
+.modaltor__panel {
+    padding: 20px;
+    border-radius: 20px!important;  
+}
+.alert {
+    padding:20px!important;
+    border-radius: 20px!important;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.kanban-column {
+    gap: 20px
+}
+.card {
+    border-radius: 20px!important; 
+}
+.priority-idx[priority="3"] {
+    background: green;
+    color: white;
+}
+.priority-idx[priority="2"] {
+    background: rgb(230, 218, 117);
+    color: white;
+}
+.priority-idx[priority="1"] {
+    background: red;
+    color: white;
+}
+.priority-idx {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    padding:10px;
+    border-radius: 5px;
+}
